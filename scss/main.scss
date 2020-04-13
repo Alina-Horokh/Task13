@@ -1,0 +1,234 @@
+body{
+  background: #fff;
+}
+h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 78px;
+}
+
+h2{
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-wrapper{
+  
+  background: #122a2f;
+}
+.logo{
+  background: url(../../images/logo.png) no-repeat;
+  width: 105px;
+  height: 59px;
+  text-indent: -9999px;
+}
+.main-nav{
+  width: 100%;
+  padding: 16px 3px 25px 0;
+  @media (max-width: 767.98px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-nav{
+    margin-top: 3px;
+    li{
+      margin-left: 46px;
+      position: relative;
+      @media (max-width: 991.98px){
+        text-align: center;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #ffe600;
+        left: -26px;
+        top: calc(50% - 3px);
+        @media (max-width: 991.98px){
+          display: none;
+        }
+      }
+      &:first-child{
+        &:before{display: none;}
+      }
+    }
+  }  
+  .btn-secondary{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:hover{
+      color: #ffe600;
+    }
+    &:focus{
+      outline: none;
+    }
+    @media (max-width: 991.98px){
+      width: 100%;
+      font-size: 30px;
+    }
+  }
+  .active{
+    .btn-secondary{
+      color: #ffe600;
+    }
+  }
+}
+
+
+.navbar-toggler{
+  @media (max-width: 991.98px){
+    background: #fff;
+  }
+}
+
+.gallery-wrapper{
+  background: #11343a;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+.gallery-descr{
+  width: 100%;  
+  text-align: center;
+  background: #122a2f;
+  .intro{
+    min-height: 370px;
+    @media (max-width: 767.98px){
+      min-height: 270px;
+    }
+    h1{
+      margin-bottom: 41px;
+      @media (max-width: 991.98px){
+        font-size: 55px;
+      }
+      @media (max-width: 767.98px) {
+        font-size: 35px;
+      }
+    }
+    a{
+      min-width: 230px;
+      padding: 0 10px;
+      margin-bottom: 11px;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #131316;
+      font-weight: 700;
+      background: #ffe600;      
+      line-height: 57px;
+      display: block;
+      &:hover{
+        background: #f3de2e;
+        text-decoration: none;
+      }
+
+    }
+  }
+}
+
+
+.arrow-link{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  a{
+    position: relative;
+    left: calc(50% - 30px);
+    display: inline-block;
+    text-align: center;
+    &:hover span{
+      text-decoration: none;
+      background: #f3de2e;
+    }
+    .icon-arrow{
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      position: relative;
+      background: #ffe600;
+      font-size: 19px;
+      line-height: 66px;
+      color: #fff;
+    }    
+  }
+}
+
+.main-content{
+  text-align: center;
+  h2{
+    margin-top: 59px;
+    margin-bottom: 43px;
+    position: relative;
+    letter-spacing: -1px;
+    span{
+      margin-bottom: 16px;
+      display: block;
+      font-size: 16px;
+      color: #515151;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+    }
+    &:after{
+      content: '';
+      width: 170px;
+      height: 3px;
+      background: #ffe600;
+      position: absolute;
+      left: calc(50% - 85px);
+      bottom: -23px;
+    }  
+  }
+  p{
+    margin-bottom: 60px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.list-services{
+
+  a{
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #131316;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    span{
+      width: 107px;
+      height: 107px;
+      margin-bottom: 18px;
+      display: block;
+      background: #ffe600;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      position: relative;      
+      &:before{
+        font-family: 'icomoon';
+        position: absolute;
+        left: calc(50% - 20px);
+        font-size: 40px;
+        line-height: 107px;
+        color: #fff;               
+      }
+      &.icon-web-design:before{
+        font-size: 35px;
+      }
+      &.icon-photography:before{
+        left: calc(50% - 18px);
+        font-size: 31px;
+      }
+    }
+    &:hover span{
+      background: #fff;
+      border: 2px solid #1b1b1e;
+      &:before{
+        color: #ffe600;
+      }
+    }
+  }
+}
+
