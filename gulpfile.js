@@ -6,6 +6,7 @@ const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
+
 function style(){
 	return gulp.src('./scss/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
@@ -35,3 +36,4 @@ function watch(){
 }
 exports.style = style;
 exports.watch = watch;
+
