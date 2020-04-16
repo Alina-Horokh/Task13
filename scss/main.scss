@@ -12,6 +12,13 @@ h2{
   text-transform: uppercase;
 }
 
+a{
+  color: #131316;
+  &:hover{
+    color: #131316;
+  }
+}
+
 .header-wrapper{
   
   background: #122a2f;
@@ -78,7 +85,6 @@ h2{
   }
 }
 
-
 .navbar-toggler{
   @media (max-width: 991.98px){
     background: #fff;
@@ -86,10 +92,12 @@ h2{
 }
 
 .gallery-wrapper{
-  background: #11343a;
+  min-height: 500px;
   height: calc(100vh - 100px);
   position: relative;
+  background: #11343a;
 }
+
 .gallery-descr{
   width: 100%;  
   text-align: center;
@@ -205,18 +213,16 @@ h2{
       width: 107px;
       height: 107px;
       margin-bottom: 18px;
-      display: inline-block;
+      display:block;
       background: #ffe600;
       border: 2px solid transparent;
       border-radius: 50%;
       position: relative;
+      line-height: 105px;
+      text-align: center;
       transition: all 0.3s ease;      
       &:before{
         font-family: 'icomoon';
-        position: absolute;       
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         font-size: 40px;
         color: #fff;               
       }
